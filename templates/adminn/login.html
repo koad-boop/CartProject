@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'admin/admin.css' %}" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form   action="dashboard"  method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="text" id="namee" name="namee" required>
+            <label for="namee">Name</label>
+        </div>
+        <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+        </div>
+        <button type="submit">submit</button>
+        <a href="/cart/">Forget Password</a>
+                
+      </form>
+    </div>
+  </div>
+    
+      
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+body {
+    background-color: black; /* Set the background color of the entire page */
+    color: white; /* Set text color to white for better contrast */
+    font-family: Arial, sans-serif; /* Optional: Set a preferred font */
+    padding: 20px; /* Add some padding around the form */
+}
+
+form {
+    max-width: 400px; /* Limit form width for better readability */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #333; /* Dark gray background for the form */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+}
+
+label {
+    display: block; /* Ensure labels are on their own line */
+    margin-bottom: 10px; /* Space between labels and inputs */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside text input */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #666; /* Darker border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    background-color: #444; /* Darker background color for inputs */
+    color: white; /* Text color inside inputs */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white; /* Text color of the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px; /* Rounded corners for the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
